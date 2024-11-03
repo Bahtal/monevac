@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Моневак</title>
+</head>
+<!-- Sprite -->
+
+<svg style='display: none;'>
+	<symbol id="logo-compare" viewBox="0 0 12 16">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C6.55228 0 7 0.447715 7 1V15C7 15.5523 6.55228 16 6 16C5.44772 16 5 15.5523 5 15V1C5 0.447715 5.44772 0 6 0ZM1 7C1.55228 7 2 7.44772 2 8L2 15C2 15.5523 1.55229 16 1 16C0.447715 16 0 15.5523 0 15V8C0 7.44772 0.447715 7 1 7ZM12 6C12 5.44772 11.5523 5 11 5C10.4477 5 10 5.44772 10 6V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V6Z" fill="#C9C9CF"/>
+	</symbol>
+	<symbol id="logo-search" viewBox="0 0 18 19">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M3 8.5C3 4.91015 5.91015 2 9.5 2C13.0899 2 16 4.91015 16 8.5C16 12.0899 13.0899 15 9.5 15C5.91015 15 3 12.0899 3 8.5ZM9.5 0C4.80558 0 1 3.80558 1 8.5C1 10.6524 1.79999 12.6179 3.11886 14.1154C3.03248 14.161 2.95137 14.2202 2.87868 14.2929L0.292893 16.8787C-0.0976311 17.2692 -0.0976311 17.9024 0.292893 18.2929C0.683417 18.6834 1.31658 18.6834 1.70711 18.2929L4.29289 15.7071C4.38897 15.611 4.46141 15.5003 4.51022 15.382C5.91149 16.3998 7.63565 17 9.5 17C14.1944 17 18 13.1944 18 8.5C18 3.80558 14.1944 0 9.5 0Z" fill="#C9C9CF"/>
+	</symbol>
+	<symbol id="header-menu" viewBox="0 0 32 12">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H31C31.5523 2 32 1.55228 32 1C32 0.447715 31.5523 0 31 0H1ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12H16C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10H1Z" fill="#262633"/>
+	</symbol>
+</svg>
+
+<!-- Sprite__end -->
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__inner-left">
+					<nav class="header__nav">
+						<ul class="nav__list" type='none'>
+							<li class="nav__item">
+								<button class="header__menu-toggle">
+									<svg class="menu__toggle">
+										<use xlink:href='#header-menu'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Упаковка</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Оборудование</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Сервис и запчасти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__logo">
+					<a href="#" aria-label='На главную'>
+						<img src="./logo/header-logotype.svg" alt="Logo">
+					</a>
+				</div>
+				<ul class="header__inner-right" type='none'>
+					<li class="header__icons">
+							<svg class='header__icon-compare'>
+								<use xlink:href='#logo-compare'></use>
+							</svg>
+							<svg class='header__icon-search'>
+								<use xlink:href='#logo-search'></use>
+							</svg>
+					</li>
+					<li class="header__contacts contact">
+						<a href="tel:+7 (499) 136-17-18" class="contact__phone phone_style">+7 (499) 136-17-18</a>
+						<a href="mailto:info@monevac.ru" class="contact__email email_style">info@monevac.ru</a>
+					</li>
+					<button class="header__request-btn btn btn-red">Оставить заявку</button>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<aside class="aside">
+		<div class="aside__inner">
+			<div class="aside__nav">
+				<a href="#" class="aside__nav-link">Главная</a>
+				<div class="aside__nav-dot"></div>
+				<a href="#" class="aside__nav-link">Контакты</a>
+			</div>
+
+			<hr>
+			<!-- <span class="aside__nav--title"></span> -->
+			<span class="aside__nav-title">Контакты</span>
+		</div>
+	</aside>
+
+	<main class="main">
+		<div class="container">
+			<div class="main__inner">
+				<section class="main__info">
+					<div class="main__contacts contact">
+						<a href="tel:+7 (903) 467-98-51" class="contact__phone main__style--phone">8 (903) 467-98-51</a>
+						<a href="mailto:info@monevac.ru" class="contact__email main__style--email">info@monevac.ru</a>
+					</div>
+					<span class='main__full-name'>
+						Полное наименование:<br>
+						Общество с ограниченной ответственностью «МОНЕВАК»<br>
+						Сокращенное наименование: ООО «МОНЕВАК»
+					</span>
+
+					<div class="main__company-info">
+						<div class="main__company-info-section">
+							<ul class="company-info__list" type='none'>
+									<li>ИНН: 3448050610</li>
+									<li>КПП: 344801001</li>
+									<li>ОКПО: 67354285</li>
+									<li>ОКАТО: 18401000000</li>
+									<li>ОГРН: 1103461002480</li>
+									<li>Код по ОКВЭД: 51.70</li>
+							</ul>
+					</div>
+
+					<div class="main__company-info-section">
+							<ul class="company-info__list" type='none'>
+									<li>Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону</li>
+									<li>БИК: 046015207</li>
+									<li>к/с: 30101810500000000207</li>
+									<li>р/с: 40702810926090000003</li>
+							</ul>
+					</div>
+
+					<div class="main__company-info-section">
+							<ul class="company-info__list" type='none'>
+									<li>Юридический адрес: 400080, Волгоградская обл. г. Волгоград ул. Командира Рудь, 14А, офис 13</li>
+									<li>Почтовый адрес: 400080, Волгоградская обл. г. Волгоград ул. Командира Рудь, 14А, офис 13</li>
+							</ul>
+					</div>
+					</div>
+
+				</section>
+				<form action="#" method='POST' class="main__form">
+					<h1 class='form-question'>Остались вопросы</h1>
+					<div class="form-inner">
+						<input class="form__title" type="text" placeholder='Ваше имя'>
+						<input class="form__title" type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ваш телефон">
+						<textarea class="form__title form__title--text" type="text" placeholder='Ваше сообщение' rows='5' cols='30' wrap='hard'></textarea>
+					</div>
+					<div class="main__policy">
+						<input type="checkbox" id='main__policy-form'>
+						<label for="main__policy-form">Я подтверждаю свое согласие с политикой в отношении <a class='policy-form__link' href="#">обработки персональных данных</a></label>
+					</div>
+					<button class="btn btn-red">Задать вопрос</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+@font-face 
+	font-family: 'RoadRadio'
+	src: url('/fonts/RoadRadio/RoadRadio.woff')
+	font-weight: regular
+
+body
+	font-family: "Golos Text", sans-serif
+	font-weight: 400
+	color: #262633
+	font-size: 15px
+	line-height: 19.6px
+
+.container
+	width: 100%
+	max-width: 1290px
+	margin: 0 auto
+
+
+//header///////////////////////////////////////////////
+
+.header 
+	width: 100%
+	height: 100%
+
+	&__inner 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 13px 0
+		&-right
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 26vw
+		&-left
+			width: 26vw	
+	&__logo
+			margin: 0 105px
+
+	&__menu-toggle
+		border: none
+		background-color: transparent
+	&__icon
+		&-compare
+			width: 12px
+			height: 16px
+		&-search
+			width: 18px
+			height: 19px
+			margin-left: 23px
+
+.contact
+		display: flex
+		flex-direction: column
+		&__phone
+			color: #262633
+			font-weight: 500
+		&__email
+			color: #777
+			font-size: 13px
+		a
+			text-decoration: none
+
+.menu__toggle
+	width: 32px
+	height: 12px
+			
+.nav__list
+		display: flex
+
+.nav__link
+			text-decoration: none
+			color: #262633
+			&:last-child
+				margin-left: 46px
+
+.btn
+	border: none
+	border-radius: 14px
+	padding: 19px 28px
+	color: #ffffff
+	font-family:  'RoadRadio', sans-serif
+	text-transform: uppercase
+	text-align: center
+	font-size: 14px
+	&-red
+		background-color: #bf2738	
+
+
+//aside/////////////////////////////////////////////////
+.aside
+	background-color: #f5f5f5
+	height: 160px
+	&__inner
+		display: flex
+		flex-direction: column
+		justify-content: center
+		hr
+			margin: 25px 0
+			border: none
+			height: 2px
+			background-color: rgba(0, 0, 0, .1)
+	&__nav
+		display: flex
+		justify-content: center
+		flex-direction: row
+		margin-top: 21px
+		&-link
+			text-decoration: none
+			color: #797986
+			font-size: 12px
+			transition: color .2s ease
+		&-link:active
+			color: rgba(121, 121, 134, .5)	
+		&-dot
+			position: relative
+			top: 10px
+			margin: 0 10px
+			width: 2px
+			height: 2px
+			border-radius: 50%
+			background-color: #797986
+		&-title
+			font-family: 'RoadRadio', sans-serif
+			text-align: center
+			font-weight: 400
+			line-height: .7
+			text-transform: uppercase
+			font-size: 46px
+			color: #262633
+
+
+
+//main///////////////////////////////////////////////
+
+.main
+	&__inner
+		display: flex
+		justify-content: space-between
+		margin-top: 62px
+	&__style
+		&--phone
+			font-family: 'RoadRadio', sans-serif
+			font-size: 36px
+		&--email
+			color: #bf2738
+			font-size: 25px
+			margin: 15px 0 23px
+	&__full-name
+		display: inline-block
+		font-size: 17px
+		margin-bottom: 15px	
+	&__company-info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: space-between
+		height: 50vh
+		font-size: 13px
+		color: #808080
+		max-width: 430px
+		max-height: 335px
+		width: 100%
+	&__policy
+		display: flex
+		align-items: center
+		margin: 23px 0 30px 0
+		& label
+			margin-left: 20px
+			font-size: 13px
+			color: #808080
+			& a
+				color: #262633
+				text-decoration: none
+#main__policy-form
+	width: 20px
+	height: 20px
+
+.form
+	&-question
+		font-family: 'RoadRadio', sans-serif
+		font-weight: 400
+		font-size: 36px
+		margin-bottom: 20px
+	&-inner
+		display: flex
+		flex-wrap: wrap
+		gap: 10px
+	&__title::placeholder
+			font-family: "Golos Text", sans-serif
+			font-size: 16px
+			color: #797986
+	&__title
+		border: none
+		border-radius: 14px
+		padding: 20px
+		flex: 1
+		min-width: calc(50% - 5px) 
+		background-color: rgba(245, 245, 245, .5)
+		&--text
+			width: 100%
+			padding-bottom: 100px
+			resize: none
+
+		
