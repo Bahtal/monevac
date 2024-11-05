@@ -134,6 +134,29 @@ body
 			font-size: 46px
 			color: #262633
 
+//map/////////////////////////////
+
+#map
+	// filter: grayscale(100%) url('/icon/map-icon.svg')
+	height: 599px
+	margin: 70px 0 80px
+.ymaps-2-1-79-inner-panes
+	// filter: grayscale(100%)
+	// .ymaps-2-1-79-user-selection-none
+	// 	filter: none !important
+	// .ymaps-2-1-79-image
+	// 	filter: grayscale(0) !important
+
+.ymaps-2-1-79-layers-pane 
+	filter: grayscale(1)
+	-ms-filter: grayscale(1)
+	-webkit-filter: grayscale(1)
+	-moz-filter: grayscale(1)
+	-o-filter: grayscale(1)
+
+.ymaps-2-1-79-copyright__wrap
+	display: none
+
 
 
 //main///////////////////////////////////////////////
@@ -208,3 +231,20 @@ body
 			resize: none
 
 		
+//address////////////////////////////////
+
+.address
+	width: 100%
+	height: 100%
+	&__inner
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px
+	&__card
+			width: 100%
+			height: 100% 
+			padding: 40px 23px
+			background-color: rgb(229, 229, 229)
+			border-radius: 20px
+			&--grid
+				grid-column: span 2
