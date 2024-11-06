@@ -137,7 +137,7 @@ body
 //map/////////////////////////////
 
 #map
-	// filter: grayscale(100%) url('/icon/map-icon.svg')
+	// filter: grayscale(100%) 
 	height: 599px
 	margin: 70px 0 80px
 .ymaps-2-1-79-inner-panes
@@ -147,17 +147,17 @@ body
 	// .ymaps-2-1-79-image
 	// 	filter: grayscale(0) !important
 
-.ymaps-2-1-79-layers-pane 
+.ymaps-layers-pane 
 	filter: grayscale(1)
 	-ms-filter: grayscale(1)
 	-webkit-filter: grayscale(1)
 	-moz-filter: grayscale(1)
 	-o-filter: grayscale(1)
 
-.ymaps-2-1-79-copyright__wrap
+.ymaps-logotype-div
 	display: none
-
-
+.ymaps-copyrights-legend
+	display: none
 
 //main///////////////////////////////////////////////
 
@@ -243,8 +243,50 @@ body
 	&__card
 			width: 100%
 			height: 100% 
+			min-height: 230px
 			padding: 40px 23px
 			background-color: rgb(229, 229, 229)
 			border-radius: 20px
+			font-size: 14px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			row-gap: 10px
 			&--grid
 				grid-column: span 2
+	&__title
+		font-family: 'RoadRadio', sans-serif
+		font-size: 26px
+		text-align: left
+		line-height: 1.1
+		margin-bottom: 26px
+		&--phone
+			text-decoration: none
+			font-size: 19px
+			line-height: 1.5		
+	&__info-phone
+		display: flex	
+		flex-direction: column
+		margin-bottom: 18px
+		&--last
+			flex-flow: row wrap
+			column-gap: 13px
+	&__geolocation
+		display: flex
+		flex-direction: column
+		row-gap: 7px
+	&__full
+		font-style: normal	
+		color: #797986
+		row-gap: 5px
+	&__geo-link
+		text-decoration: none
+		color: #bf2738
+	&__time
+		line-height: 1.4
+
+.footer
+	width: 100%
+	height: 100%
+	background: linear-gradient(to left, #2a2a2e, #2a2a2e 50%, #222225 50%, #2a2a2e 200%)
+	margin-top: 100pxg
