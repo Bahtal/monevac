@@ -7,6 +7,11 @@
 	font-family: 'RoadRadio'
 	src: url('/fonts/RoadRadio/RoadRadio.woff')
 	font-weight: regular
+@font-face 
+	font-family: 'Akzidenz-Grotesk Pro';
+	src: url('/fonts/Akzidenz-Grotesk Pro/AkzidenzGroteskPro-Regular.woff')
+	font-weight: regular
+
 
 body
 	font-family: "Golos Text", sans-serif
@@ -100,7 +105,7 @@ body
 		display: flex
 		flex-direction: column
 		justify-content: center
-		hr
+		.gorizontal__line
 			margin: 25px 0
 			border: none
 			height: 2px
@@ -167,17 +172,18 @@ body
 		justify-content: space-between
 		margin-top: 62px
 	&__style
+		&--email
+			color: 	#f23147
+			font-size: 25px
+			line-height: 30px
 		&--phone
 			font-family: 'RoadRadio', sans-serif
 			font-size: 36px
-		&--email
-			color: #bf2738
-			font-size: 25px
-			margin: 15px 0 23px
+			line-height: 1.1
 	&__full-name
 		display: inline-block
 		font-size: 17px
-		margin-bottom: 15px	
+		margin: 20px 0 15px	
 	&__company-info
 		display: flex
 		flex-direction: column
@@ -289,4 +295,71 @@ body
 	width: 100%
 	height: 100%
 	background: linear-gradient(to left, #2a2a2e, #2a2a2e 50%, #222225 50%, #2a2a2e 200%)
-	margin-top: 100pxg
+	margin-top: 100px
+	&__inner
+		display: flex
+	&__left-side
+		width: 50%
+		padding-top: 70px
+		display: flex
+		flex-direction: column
+		row-gap: 70px
+	&__right-side
+		width: 50%	
+		padding: 70px 0 0 123px
+	
+	&__items
+		display: flex
+		flex-direction: column	
+	&__item
+		text-decoration: none
+		color: #fff
+		font-size: 24px
+		line-height: 1.7
+	&__contacts
+		display: flex
+		align-items: flex-start
+		column-gap: 60px
+	&__nav
+		display: flex
+		flex-flow: row wrap
+		max-width: 600px
+		column-gap: 25px
+		&-link
+			color: #767687
+			text-decoration: none
+			font-size: 16px
+	&__email
+		color: #f23147
+		font-size: 24px
+		line-height: 1.4
+		margin: 20px 0 100px
+		
+	&__full_white
+		font-family: 'Akzidenz-Grotesk Pro', sans-serif
+		color: #fff
+		font-size: 16px
+		line-height: 1.3
+	&__line
+		margin: 43px 0 23px
+		border: none
+		height: 1px
+		background-color: rgba(255, 255, 255 , .05) 
+	&__discription
+		display: flex
+		justify-content: space-between
+	&__name
+		font-family: 'Akzidenz-Grotesk Pro', sans-serif
+		color: #797986
+		font-size: 13px
+		line-height: 1.1
+		padding-bottom: 30px
+.phone_style-footer
+		color: #fff
+		font-weight: 400
+		font-size: 30px
+		line-height: 1.3
+.transparent__btn
+	background-color: transparent		
+	border: 2px solid #494950
+	
