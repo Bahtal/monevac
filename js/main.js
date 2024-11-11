@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			label[0].style.opacity = "0";
 		}
 
-		if (phone.value.trim() === '') {
+		if (phone.value.includes('_')) {
 			phone.classList.add('error');
 			label[1].style.opacity = "1";
 			isValid = false;
@@ -46,11 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		lazy: false,
 		placeholderChar: '_' 
 	});
-	if (phoneInput.value.trim() !== "") {
-    phoneInput.style.color = "#262633"
-} else {
-    phoneInput.style.color = "#0202c7"
-}
 });
 
 
